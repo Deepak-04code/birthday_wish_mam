@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Happy Birthday Mam</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #fff0f5;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    h1 {
+      font-size: 4rem;
+      color: #e60073;
+      margin-top: -10px;
+    }
+
+    .greeting {
+      font-size: 1.4rem;
+      max-width: 700px;
+      margin: 20px auto;
+      background: white;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    img {
+      margin-top: 20px;
+      width: 150px;
+      border-radius: 20px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    }
+
+    .from {
+      margin-top: 30px;
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #444;
+    }
+
+    .next-btn {
+      margin-top: 40px;
+      font-size: 1.1rem;
+      padding: 12px 24px;
+      background: #ff4081;
+      border: none;
+      border-radius: 10px;
+      color: white;
+      cursor: pointer;
+    }
+
+    /* Balloons animation */
+    .balloons {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      overflow: hidden;
+      z-index: -1;
+    }
+
+    .balloon {
+      width: 60px;
+      height: 80px;
+      background: pink;
+      border-radius: 50% 50% 50% 50%;
+      position: absolute;
+      bottom: -100px;
+      animation: float 6s ease-in-out infinite;
+    }
+
+    .balloon::after {
+      content: '';
+      position: absolute;
+      bottom: -20px;
+      left: 50%;
+      width: 2px;
+      height: 20px;
+      background: #555;
+    }
+
+    .balloon:nth-child(1) {
+      left: 10%;
+      background: #ff99cc;
+      animation-delay: 0s;
+    }
+
+    .balloon:nth-child(2) {
+      left: 30%;
+      background: #ffccff;
+      animation-delay: 1s;
+    }
+
+    .balloon:nth-child(3) {
+      left: 50%;
+      background: #ffb3b3;
+      animation-delay: 2s;
+    }
+
+    .balloon:nth-child(4) {
+      left: 70%;
+      background: #ffccee;
+      animation-delay: 3s;
+    }
+
+    .balloon:nth-child(5) {
+      left: 85%;
+      background: #ffd1dc;
+      animation-delay: 4s;
+    }
+
+    @keyframes float {
+      0% {
+        transform: translateY(0) rotate(0deg);
+      }
+      50% {
+        transform: translateY(-600px) rotate(8deg);
+      }
+      100% {
+        transform: translateY(0) rotate(-8deg);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="balloons">
+    <div class="balloon"></div>
+    <div class="balloon"></div>
+    <div class="balloon"></div>
+    <div class="balloon"></div>
+    <div class="balloon"></div>
+  </div>
+
+  <h1>🎉 Happy Birthday Mam 🎂</h1>
+  <div class="greeting">
+    Wishing you a beautiful day filled with love, laughter, and joy!<br>
+    Your presence in our lives is a true blessing.<br>
+    Thank you for being an incredible teacher. 💐
+  </div>
+  <img src="kirti.jpg" alt="Ms. Kirti Mam" />
+  <div class="from">– by, Deepak 💖</div>
+  <button class="next-btn" onclick="location.href='teddy.html'">SURPRISE 🎀🎁</button>
+</body>
+</html>
